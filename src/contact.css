@@ -1,0 +1,36 @@
+#content {
+    display: flex;
+    flex: 1;
+}
+
+#contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    width: 90%;
+    max-width: 600px;
+    
+
+    min-height: 500px;
+    height: auto; 
+    
+    padding: 24px;
+    box-sizing: border-box; 
+    background-color: rgba(3, 0, 0, 0.8);
+    backdrop-filter: blur(3px);
+    color: #fcfefe;
+    margin: auto;
+
+}
+#contact-card img {
+    width:400px;
+    height: 400px;
+    /* border-radius: 50%;       */
+    object-fit: cover;        
+    border: 3px solid #090909; 
+}
+p {
+    font-size: 20px;
+}

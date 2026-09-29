@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html, body {
+ margin : 0;
+ padding: 0;
+ width: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    
+    
+}
+img {
+    display: block;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(30, 30, 30, 0.2);
+    backdrop-filter: blur(5px);
+    height: 220px;
+}
+
+h1{
+    color: rgb(11, 10, 10);
+    /* color:white; */
+    /* color: #fcfefe;  */
+    font-size: 60px;
+    font-family: Marker Felt, fantasy;
+}
+
+.button-nav {
+all: unset;
+cursor: pointer;
+font-size: 30px;
+transition: transform 0.3s ease-out;
+font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+font-weight: 600;
+
+}
+.button-nav:active {
+  transform: scale(0.98);
+}
+.button-nav:hover {
+    transform: translateY(-6px);
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+/* Fade-in animation class applied to newly loaded tab contents */
+.tab-content {
+  animation: fadeIn 0.35s ease-in-out forwards;
+}
+
+/* Optional: Fade-out utility class for content being removed */
+.fade-out {
+  animation: fadeOut 0.25s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px); /* Subtle upward slide */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
